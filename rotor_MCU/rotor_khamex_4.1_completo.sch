@@ -8006,6 +8006,8 @@ Updated by Ella Wu 2021-03-12&lt;BR&gt;
 <part name="MODULO_GND_IN1" library="solpad" deviceset="SE14" device=""/>
 <part name="5V_ROTOR" library="solpad" deviceset="SE14" device=""/>
 <part name="GND" library="solpad" deviceset="SE14" device=""/>
+<part name="CANH1" library="solpad" deviceset="LSP11" device=""/>
+<part name="CANL1" library="solpad" deviceset="LSP11" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8079,6 +8081,8 @@ Updated by Ella Wu 2021-03-12&lt;BR&gt;
 <instance part="GND21" gate="1" x="60.96" y="185.42" rot="R270"/>
 <instance part="GND22" gate="1" x="66.04" y="187.96" rot="R270"/>
 <instance part="GND23" gate="1" x="91.44" y="190.5" rot="R90"/>
+<instance part="CANH1" gate="1" x="350.52" y="48.26" rot="R270"/>
+<instance part="CANL1" gate="1" x="350.52" y="40.64" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -8544,6 +8548,11 @@ Updated by Ella Wu 2021-03-12&lt;BR&gt;
 <wire x1="71.12" y1="190.5" x2="60.96" y2="190.5" width="0.1524" layer="91"/>
 <label x="60.96" y="190.5" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="CANH1" gate="1" pin="MP"/>
+<wire x1="347.98" y1="48.26" x2="342.9" y2="48.26" width="0.1524" layer="91"/>
+<label x="342.9" y="48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="CANL" class="0">
 <segment>
@@ -8573,6 +8582,11 @@ Updated by Ella Wu 2021-03-12&lt;BR&gt;
 <pinref part="J4" gate="G$1" pin="8"/>
 <wire x1="81.28" y1="187.96" x2="96.52" y2="187.96" width="0.1524" layer="91"/>
 <label x="96.52" y="187.96" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CANL1" gate="1" pin="MP"/>
+<wire x1="347.98" y1="40.64" x2="342.9" y2="40.64" width="0.1524" layer="91"/>
+<label x="342.9" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

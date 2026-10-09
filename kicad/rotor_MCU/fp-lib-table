@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "rotor_khamex_4.5")(type "KiCad")(uri "$(KIPRJMOD)/rotor_khamex_4.5.pretty")(options "")(descr ""))
+)
