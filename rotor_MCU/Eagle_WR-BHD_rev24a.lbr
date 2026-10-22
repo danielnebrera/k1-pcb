@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mic" unit="mic" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -111,7 +111,6 @@
 <layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="133" name="mecanical" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
@@ -216,17 +215,136 @@
 <pad name="10" x="5.08" y="1.27" drill="1.02"/>
 <text x="-11.335" y="1.35" size="1.27" layer="25" align="bottom-right">&gt;NAME</text>
 <text x="-11.37" y="-1.685" size="1.27" layer="27" align="bottom-right">&gt;VALUE</text>
-<polygon width="0.1" layer="39">
-<vertex x="-10.45" y="4.95"/>
-<vertex x="10.45" y="4.95"/>
-<vertex x="10.45" y="-4.7"/>
-<vertex x="-10.45" y="-4.7"/>
-</polygon>
 </package>
 </packages>
 <symbols>
+<symbol name="5X2MT">
+<description>5x2Rows Male THT</description>
+<circle x="-5.08" y="-1.27" radius="0.254" width="0.635" layer="94"/>
+<circle x="-5.08" y="1.27" radius="0.254" width="0.635" layer="94"/>
+<circle x="-2.54" y="-1.27" radius="0.254" width="0.635" layer="94"/>
+<circle x="-2.54" y="1.27" radius="0.254" width="0.635" layer="94"/>
+<circle x="0" y="-1.27" radius="0.254" width="0.635" layer="94"/>
+<circle x="0" y="1.27" radius="0.254" width="0.635" layer="94"/>
+<circle x="2.54" y="-1.27" radius="0.254" width="0.635" layer="94"/>
+<circle x="2.54" y="1.27" radius="0.254" width="0.635" layer="94"/>
+<circle x="5.08" y="-1.27" radius="0.254" width="0.635" layer="94"/>
+<circle x="5.08" y="1.27" radius="0.254" width="0.635" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="-5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="3" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="4" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="5" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="6" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="7" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="8" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="9" x="5.08" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="10" x="5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<text x="-8.8" y="0.35" size="1.016" layer="95" align="bottom-right">&gt;NAME</text>
+<text x="-8.66" y="-1.87" size="1.016" layer="96" align="bottom-right">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="6120XX235121_612010235121" prefix="J">
+<description>&lt;b&gt;WR-BHD 2.54 mm Male Box Header High Temperature&lt;/b&gt;
+&lt;BR&gt;
+&lt;BR&gt;
+&lt;b&gt;KIND PROPERTIES:&lt;/b&gt;
+&lt;BR&gt;
+&lt;BR&gt;Pitch 2.54 mm 
+&lt;BR&gt;Gender:Male
+&lt;BR&gt;
+&lt;BR&gt;&lt;B&gt;MATERIAL PROPERTIES&lt;/B&gt;:
+&lt;BR&gt;
+&lt;BR&gt;Insulator Material:PA6T
+&lt;BR&gt;Insulator Flammability Rating UL94 V-0 
+&lt;BR&gt;Insulator Color:Black
+&lt;BR&gt;Contact Material :Copper Alloy
+&lt;BR&gt;Contact Plating :Gold
+&lt;BR&gt;Contact Type: Stamped 
+&lt;BR&gt;
+&lt;BR&gt;&lt;B&gt;GENERAL INFORMATION:&lt;/B&gt;
+&lt;BR&gt;
+&lt;BR&gt;Operating Temperature:-40 °C up to +125 °C 
+&lt;BR&gt;Compliance:RoHS 
+&lt;BR&gt;Working Voltage: 250 V (AC) 
+&lt;BR&gt;Withstanding Voltage:500 V (AC) 
+&lt;BR&gt;Contact Resistance: 20 mO 
+&lt;BR&gt;Insulation Resistance:1000 MO 
+&lt;BR&gt;
+&lt;BR&gt;
+&lt;BR&gt;&lt;B&gt;PACKAGING PROPERTIES&lt;/b&gt;
+&lt;BR&gt;
+&lt;BR&gt;Packaging :Tray
+&lt;BR&gt;
+&lt;br&gt;&lt;a href="https://www.we-online.com/catalog/media/o32904v209%20Family_WR-BHD_6120xx235121.jpg" title="Enlarge picture"&gt;
+&lt;img src="https://www.we-online.com/catalog/media/o32904v209%20Family_WR-BHD_6120xx235121.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+
+Details see: &lt;a href="https://www.we-online.com/catalog/en/BHD_2_54_MALE_BOX_HEADER_HIGH_TEMPERATURE_6120XX235121"&gt;https://www.we-online.com/catalog/en/BHD_2_54_MALE_BOX_HEADER_HIGH_TEMPERATURE_6120XX235121&lt;/a&gt;&lt;p&gt;
+
+Updated by Ella Wu 2021-03-12&lt;BR&gt;
+2021 (C) Würth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="5X2MT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="612010235121">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CONTACT-RESISTANCE" value="20mOhm"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/612010235121?ae"/>
+<attribute name="GENDER" value="Male"/>
+<attribute name="IR" value="3A"/>
+<attribute name="LENGTH" value="20.3mm"/>
+<attribute name="MOUNT" value="THT"/>
+<attribute name="PACKAGING" value="Tray"/>
+<attribute name="PART-NUMBER" value="612010235121"/>
+<attribute name="PINS" value=" 10 "/>
+<attribute name="PITCH" value="2.54mm"/>
+<attribute name="TYPE" value="Straight"/>
+<attribute name="VALUE" value="612010235121"/>
+<attribute name="WORKING-VOLTAGE" value="250V(AC)"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

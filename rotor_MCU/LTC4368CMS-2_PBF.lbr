@@ -111,7 +111,6 @@
 <layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="133" name="mecanical" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
@@ -191,8 +190,60 @@
 </package>
 </packages>
 <symbols>
+<symbol name="LTC4368CMS-2#PBF">
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<pin name="!FAULT" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="!SHDN" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="GATE" x="17.78" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="OV" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="RETRY" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="SENSE" x="17.78" y="7.62" length="middle" direction="in" rot="R180"/>
+<pin name="UV" x="-17.78" y="-5.08" length="middle" direction="in"/>
+<pin name="VIN" x="-17.78" y="10.16" length="middle" direction="in"/>
+<pin name="VOUT" x="17.78" y="10.16" length="middle" direction="out" rot="R180"/>
+<text x="-12.7" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="LTC4368CMS-2#PBF" prefix="U">
+<description>&lt;a href="https://pricing.snapeda.com/parts/LTC4368CMS-2%23PBF/Analog%20Devices/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC4368CMS-2#PBF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP50P490X110-10N">
+<connects>
+<connect gate="G$1" pin="!FAULT" pad="7"/>
+<connect gate="G$1" pin="!SHDN" pad="6"/>
+<connect gate="G$1" pin="GATE" pad="10"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="OV" pad="3"/>
+<connect gate="G$1" pin="RETRY" pad="4"/>
+<connect gate="G$1" pin="SENSE" pad="9"/>
+<connect gate="G$1" pin="UV" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/LTC4368CMS-2%23PBF/Analog+Devices/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value="                                                      100V UV/OV and Reverse Protection Controller with Bidirectional Circuit Breaker                                              "/>
+<attribute name="MF" value="Analog Devices"/>
+<attribute name="MP" value="LTC4368CMS-2#PBF"/>
+<attribute name="PACKAGE" value="MSOP-10 Analog Devices"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/LTC4368CMS-2%23PBF/Analog+Devices/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
